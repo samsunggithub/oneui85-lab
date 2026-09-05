@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img loading="lazy" src="readme-res/banner.png" alt="Star7-ROM"/>
+  <img loading="lazy" src="readme-res/banner-star7.png" alt="Star7-ROM"/>
 </h1>
 <p align="center">
   <a href="https://github.com/samsunggithub/oneui8.5-lab/blob/main/LICENSE"><img loading="lazy" src="https://img.shields.io/github/license/star-star-dev/Star7ROM?style=for-the-badge&logo=github" alt="License"/></a>
