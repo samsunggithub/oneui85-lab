@@ -13,10 +13,11 @@ Star7-ROM uses the [UN1CA](https://github.com/salvogiangri/UN1CA) build system a
 
 ## Upstream lineage and porting references
 
-The current Galaxy Note10+ porting work in this branch primarily derives from the device-focused project lineage, target-side configuration references, patch organization, and porting experience of [EternityROM fifteen][2] and [ExtremeROM fifteen][3]. UN1CA remains the build-system base, while these two projects are the principal references for the Exynos Note10+ adaptation itself.
+Star7-ROM is derived from the [Maniac-ROM](https://github.com/ricci206/Maniac-ROM) project and retains its contributor acknowledgements, credit structure, and parts of its documentation lineage. The current Galaxy Note10+ porting work in this branch additionally derives from the device-focused project lineage, target-side configuration references, patch organization, and porting experience of [EternityROM fifteen][2] and [ExtremeROM fifteen][3]. UN1CA remains the build-system base, while these projects are the principal references for the Exynos Note10+ adaptation itself.
 
 | Project | Role in this branch |
 |---|---|
+| [Maniac-ROM](https://github.com/ricci206/Maniac-ROM) | Source project from which this repository was modified and updated; its contributor and upstream acknowledgements are retained below. |
 | [UN1CA][1] | Parent build system and firmware-to-package workflow. |
 | [EternityROM fifteen][2] | Primary Galaxy Note10-series (Exynos) porting reference, including target-device configuration and patching approach. |
 | [ExtremeROM fifteen][3] | Historical project foundation and major reference for the porting structure, device adaptation practices, and upstream project lineage. |
@@ -85,7 +86,9 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 
 # Credits and acknowledgements
 
-The current Galaxy Note10+ branch is principally informed by [EternityROM fifteen][2] and [ExtremeROM fifteen][3], with UN1CA providing the underlying build system. Their project history, target-device knowledge, patching practices, and technical contributions are acknowledged here alongside the wider contributor community.
+The current Galaxy Note10+ branch is principally derived from and informed by [Maniac-ROM](https://github.com/ricci206/Maniac-ROM), [EternityROM fifteen][2], and [ExtremeROM fifteen][3], with UN1CA providing the underlying build system. This section intentionally includes the contributors acknowledged by the source Maniac-ROM project, together with the wider contributors whose work supports the porting ecosystem.
+
+> **Source attribution:** Maniac-ROM is the source project from which Star7-ROM was modified and updated. The contributor credits below are retained as an acknowledgement of the project history, technical guidance, testing, documentation, and other contributions inherited from that work.
 
 - **[salvogiangri](https://github.com/salvogiangri)** for the UN1CA build system, One UI patches, and general project support.
 - **[Ocin4Ever](https://github.com/Ocin4ever)** and the [EternityROM project][2] for Galaxy Note10-series porting references, target-side configuration guidance, and patching experience.
