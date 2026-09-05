@@ -1,0 +1,48 @@
+From 5c156f2392bb7ab1f151bb92ca9e6fe578f09772 Mon Sep 17 00:00:00 2001
+From: Louis Poier <lpoier7@proton.me>
+Date: Sat, 21 Jun 2025 20:25:02 +0200
+Subject: [PATCH] Nuke MPOS Service
+
+---
+diff --git a/smali/com/android/server/SystemServer$$ExternalSyntheticLambda10.smali b/smali/com/android/server/SystemServer$$ExternalSyntheticLambda10.smali
+index be66db5..35d7e4a 100644
+--- a/smali/com/android/server/SystemServer$$ExternalSyntheticLambda10.smali
++++ b/smali/com/android/server/SystemServer$$ExternalSyntheticLambda10.smali
+@@ -131,35 +131,6 @@
+     invoke-virtual {v1}, Landroid/util/TimingsTraceLog;->traceEnd()V
+ 
+     :cond_0
+-    const-string/jumbo p0, "MPOS Service"
+-
+-    invoke-virtual {v1, p0}, Lcom/android/server/utils/TimingsTraceAndSlog;->traceBegin(Ljava/lang/String;)V
+-
+-    :try_start_5
+-    const-string/jumbo p0, "mpos_service"
+-
+-    new-instance v2, Lcom/android/server/SystemServer$5;
+-
+-    invoke-direct {v2, v3}, Lcom/android/server/SystemServer$5;-><init>(I)V
+-
+-    invoke-static {p0, v2}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Landroid/os/IServiceCreator;)V
+-    :try_end_5
+-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_0
+-
+-    goto :goto_5
+-
+-    :catch_0
+-    move-exception p0
+-
+-    const-string/jumbo v2, "MPOS - failed to add MPOS Manager Service "
+-
+-    invoke-static {v0, v2}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+-
+-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+-
+-    :goto_5
+-    invoke-virtual {v1}, Landroid/util/TimingsTraceLog;->traceEnd()V
+-
+     const-string p0, "Email Keystore Service"
+ 
+     invoke-virtual {v1, p0}, Lcom/android/server/utils/TimingsTraceAndSlog;->traceBegin(Ljava/lang/String;)V
+-- 
+2.49.1
